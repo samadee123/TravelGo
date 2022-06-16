@@ -1,0 +1,264 @@
+﻿* {
+    font-family: 'poppins',Sans-serif,Arial, Helvetica;
+    padding: 0;
+    margin: 0;
+}
+/*NAVIGATION BAR */
+.nav {
+    background-color: #24282d;
+}
+.nav ul{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav ul li{
+    padding: 10px 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.nav a:hover {
+    color:#14f6f3;
+}
+.nav ul li:hover{
+    background-color: #015d56;
+    transition: 0.9s;
+}
+/* FOOTER */
+.mainfooter h3 {
+    color: #0f8fef;
+    text-align: center;
+}
+
+.footer3 {
+    background-color: #72bade;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    height: 50px;
+}
+
+.contact {
+    line-height: 25px;
+    text-align: center;
+    color: #0f8fef;
+}
+/* MAIN IMAGE */
+.hero {
+    position: relative;
+}
+
+.D_hero {
+    display: none;
+}
+
+.mainimg {
+    width: 100%;
+    height: 500px;
+}
+.middescription h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #313131;
+}
+
+.middescription p {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.middescription ul, ol {
+    margin-left: 25px;
+    margin-right: auto;
+    text-align: left;
+    line-height: 25px;
+}
+
+.middescription img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    border-radius: 10px;
+}
+.sec1, .sec2, .sec3 {
+    background-color: white;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 8px 5px #0000003b;
+    border-radius: 10px;
+}
+
+.sec1 {
+    position: relative;
+    animation-name: slide1;
+    animation-duration: 2s;
+}
+
+.sec3 {
+    position: relative;
+    animation-name: slide3;
+    animation-duration: 2s;
+}
+.sec3 h2{
+    padding: 40px;
+}
+@keyframes slide1 {
+    0%   {left:-400px; top:0px;}
+    100% {left:0px; top:px;}
+  }
+  @keyframes slide3 {
+    0%   {right:-400px; top:0px;}
+    100% {right:0px; top:px;}
+  }
+  /* IMAGE SLIDE STYLING */
+.sigiriya, .slide {
+    box-shadow:inset ;
+    border-radius: 10px;
+}
+
+.sigiriya {
+    display: flex;
+    margin-top: 50px;
+    margin: 5%;
+    overflow: hidden;
+    
+    width: 600px;
+    height: 450px;
+}
+
+.sigiriya {
+    margin-right: 5%;
+    width: 600px;
+    transition: 1s;
+}
+
+.sigiriya input {
+    display: none;
+}
+
+.sigiriya img {
+    border-radius: 10px;
+    max-width: 600px;
+    height: 100%;
+    object-fit: cover;
+}
+/* Manual navigation */
+.nav-manual {
+    display: flex;
+    position: absolute;
+    width: 600px;
+    margin-top: 460px;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {margin-right: 10%;}
+
+.manual-btn:hover {background: light-blue;}
+
+#radioSigiriya1:checked~.sigiriya1 {margin-left: 0%;}
+#radioSigiriya1:checked~.sigiriya1 {margin-left: -105%;}
+
+#radioSigiriya2:checked~.sigiriya2 {margin-left: 0%;}
+#radioSigiriya2:checked~.sigiriya2 {margin-left: -105%;}
+
+/* FLEX STYLING */
+.container-1{
+    display: flex;
+}
+.slide1, .slide2 {
+    border: hidden;
+    padding: 76px;
+}
+/* MAP STYLING */
+iframe{
+    width:300px;
+    height: 200px;
+    border:none;
+    padding: 40px;
+}
+@media only screen and (min-width: 769px) {
+    .hero {
+        display: none;
+    }
+
+    .D_hero {
+        width: 100%;
+        display: block;
+    }
+
+    .maindes p {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .maindes {
+        height: 120px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .nav a {
+        margin: 20px;
+    }
+
+    .middescription article {
+        width: 30%;
+    }
+
+    .middescription {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    .middescription section {
+        width: 27%;
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .nav ul {
+        height: 260px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .sigiriya {
+        width: 450px;
+        height: 450px;
+    }
+    .slide{
+        width: 450px;
+    }
+    .slide img {
+
+        max-width: 450px;
+    }
+}
+
+
