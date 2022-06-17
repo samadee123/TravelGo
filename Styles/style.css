@@ -1,0 +1,501 @@
+﻿/* UNIVERSAL STYLING TAG */
+* {
+    font-family: 'poppins',Sans-serif,Arial, Helvetica;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color:white;
+}
+/* NAVIGATION BAR STYLING */
+.nav {
+    background-color: #24282d;
+}
+.nav ul{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav ul li{
+    padding: 10px 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.nav a:hover {
+    color:#14f6f3;
+}
+.nav ul li:hover{
+    background-color: #015d56;
+    transition: 0.9s;
+}
+
+
+.description2 {
+    background-color: #8ff2fb;
+    height: 170px;
+    display: flex;
+    align-items: center;
+}
+.description2 p {
+    color: #2c2c2c;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 23px;
+    margin-right: 26px;
+    
+}
+.orderedlist{
+    padding: 25px;
+}
+
+.homemainimage {
+    display: none;
+    height: 400px;
+}
+
+.description3 h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #313131;
+}
+
+.description3 img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+.description3 p {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    line-height: 25px;
+}
+.description3 hr {
+    width: 50%;
+    background-color: black;
+    height: 1.5px;
+}
+
+.description3 {
+    background-color: #ffffff;
+}
+
+.contact {
+    line-height: 20px;
+    text-align: center;
+}
+.backgroundh {
+    background-color: #f0f0f0;
+}
+.text {
+    color: white;
+    background-color: #169ff3;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.description3 ul {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: left;
+    line-height: 25px;
+}
+/* DONATION PAGE FORM */
+.form {
+    font-size: 15px;
+    display: block;
+    background-color: white;
+    height: 850px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input, textarea {
+    width: 95%;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    text-align: center;
+    background-color: #0f8fef;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #383838;
+}
+
+.contactinfo {
+    color: #1b1b1b;
+    font-size: 15px;
+    height: 250px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*.homef h3 {
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.more{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #0d86e1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.more:hover{
+    background-color: pink;
+}*/
+
+@media only screen and (max-width: 990px) {
+    
+    body{
+        width: 100%;
+
+    }
+
+}
+    /* FOOTER */
+    .mainfooter h3 {
+        color: black;
+        text-align: center;
+        background-color: #f1ebeb;
+    }
+
+    .footer3 {
+        background-color: black;
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        height: 50px;
+    }
+
+    .contact {
+        line-height: 25px;
+        text-align: center;
+        color: black;
+        background-color: #f1ebeb;
+    }
+
+    .Introduction1,
+    .Introduction2,
+    .Introduction3 {
+        /*background-color: aliceblue;*/
+        display: inline-flex;
+        width: 81%;
+        margin: 2% 10% 0% 10%;
+        border: solid 1px grey;
+    }
+
+    .Introduction2 {
+        flex-direction: row-reverse;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2% 3%;
+        width: 30%;
+        text-align: center;
+    }
+
+        .image a {
+            text-decoration: none;
+            background-color: #10bcf0;
+            color: black;
+            transition: 0.6s;
+        }
+
+            .image a:hover {
+                color: white;
+                background-color: #1473c2;
+            }
+
+    .information {
+        text-align: center;
+        width: 50%;
+        margin: 2%;
+    }
+
+        .information h1 {
+            letter-spacing: 1.5px;
+            font-size: 2.5rem;
+            margin-bottom: 2.5%;
+        }
+
+
+    .container2 {
+        width: 98vw;
+        overflow-x: hidden;
+    }
+
+    .MainImage {
+        max-height: 700px;
+        max-width: 2000px;
+    }
+    /* BEACH PAGE STYLING */
+    .beachMain img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .intro {
+        grid-area: intro;
+        text-align: center;
+        width: 70%;
+        margin: 1% auto;
+    }
+
+        .intro p {
+            margin-bottom: 2%;
+            font-size: 1.4rem;
+        }
+/* WILDLIFE PAGE STYLING */
+    iframe {
+        width: 330px;
+        height: 350px;
+        frameborder: 0;
+        scrolling: no;
+    }
+    
+/* WILDLIFE TABLE STYLING */
+.summary {
+    padding: 3px;
+    border: 1px solid black;
+    background-color: grey;
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: aliceblue;
+}
+iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+    padding: 40px;
+}
+
+    /* ACTIVITY PAGE LINKS */
+
+    .heritagelinks {
+        width: 60%;
+        margin: 5% auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .heritagelink {
+        display: inline-flex;
+        padding: 3%;
+        color: black;
+        border: 1px solid black;
+        background: #caebe8;
+        margin: 3%;
+    }
+
+        .heritagelink a {
+            text-decoration: none;
+            color: grey;
+            transition: 0.4s;
+        }
+
+            .heritagelink a:hover {
+                color: black;
+            }
+
+
+    @media only screen and (max-width: 1024px) {
+        .homemainimage {
+            width: 100%;
+            height: auto;
+        }
+
+        .intro {
+            width: 80%;
+        }
+
+        .homemainimage {
+            width: 100%;
+            display: block;
+        }
+
+        .Introduction1, .Introduction2, .Introduction3 {
+            flex-direction: column-reverse;
+        }
+
+        .image {
+            margin: 0% 5% 5% 5%;
+            width: 90%;
+        }
+
+            .image a {
+                width: max-content;
+                margin: 3% auto 0% auto;
+            }
+
+        .information {
+            width: 90%;
+            margin: 5% 5% 5% 5%;
+        }
+
+            .information a {
+                margin: 0% 0% 5% 0%;
+            }
+
+        .description1 {
+            background-color: #f5f4f2;
+        }
+
+        .footer2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 50%;
+            margin-right: 50%;
+        }
+
+        /*.description2 {
+        height: 115px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .description2 p {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }*/
+
+        .address {
+            text-align: right;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .nav ul {
+            height: 260px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 2.2rem;
+        }
+
+        .intro p {
+            font-size: 1rem;
+        }
+
+        .image a {
+            font-size: 0.9rem;
+        }
+
+        .info h4 {
+            font-size: 1.1rem;
+        }
+
+        .info p {
+            font-size: 1rem;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .description3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .description3 section {
+            width: 30%;
+            margin-top: 30px;
+        }
+
+        .form {
+            padding-top: 20px;
+            padding-bottom: 50px;
+            width: 80%;
+        }
+
+        .innerform {
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .description1 img {
+            height: 50%;
+        }
+
+        .homemainimage {
+            width: 80%;
+            height: 50%;
+            display: block;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .description2 {
+            height: 115px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+            .description2 p {
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+            }
+    }
+
+
+   
+    
+    
+
+    
+
+    
+
+   
